@@ -1,0 +1,25 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UFT-8">        
+        <title>Lista de Exercícios 13 --> Questão 1</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function Soma(v1, v2){
+                valor1 = document.getElementById("v1");
+                valor2 = document.getElementById("v2");
+ 
+                v1 = parseInt(valor1.value);
+                v2 = parseInt(valor2.value);                
+                resultado = v1 + v2;
+ 
+                painelResultado = document.getElementById("res");
+                painelResultado.innerHTML = "Resultado: " + resultado;
+            }
+        </script>
+        <input type="text"id="v1"><br>
+        <input type="text"id="v2">
+        <p id="res">Resposta: </p>
+        <button type="button" onclick="Soma(v1, v2);">Soma</button>
+    </body>
+</html>
